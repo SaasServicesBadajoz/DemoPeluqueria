@@ -1,0 +1,16 @@
+<section class="auth">
+  <p class="eyebrow">Ingresar</p>
+  <h1>Acceso de administrador</h1>
+  <form (ngSubmit)="login()">
+    <label>
+      Usuario
+      <input name="username" [(ngModel)]="username" />
+    </label>
+    <label>
+      Contraseña
+      <input type="password" name="password" [(ngModel)]="password" />
+    </label>
+    <button type="submit">Entrar</button>
+  </form>
+  <p class="hint">Usuario: admin · Contraseña: admin123</p>
+</section>

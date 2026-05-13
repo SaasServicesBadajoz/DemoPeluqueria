@@ -1,0 +1,49 @@
+<section class="page">
+  <div class="booking-header">
+    <p class="eyebrow">Agendar cita</p>
+    <h1>Reserva tu visita</h1>
+    <p class="lead">Completa el formulario y nos pondremos en contacto para confirmar tu cita.</p>
+  </div>
+
+  <form class="booking-form" (ngSubmit)="submit()">
+    <label>
+      Nombre *
+      <input name="name" [(ngModel)]="appointment.name" required />
+    </label>
+
+    <label>
+      Número de teléfono *
+      <input name="phone" [(ngModel)]="appointment.phone" required />
+    </label>
+
+    <label>
+      Correo electrónico
+      <input type="email" name="email" [(ngModel)]="appointment.email" />
+    </label>
+
+    <label>
+      Fecha *
+      <input type="date" name="date" [(ngModel)]="appointment.date" required />
+    </label>
+
+    <label>
+      Hora *
+      <select name="time" [(ngModel)]="appointment.time" required>
+        <option value="">Selecciona una hora</option>
+        <option *ngFor="let hour of hours" [value]="hour">{{ hour }}</option>
+      </select>
+    </label>
+
+    <label>
+      Número de personas
+      <input type="number" min="1" name="people" [(ngModel)]="appointment.people" />
+    </label>
+
+    <label>
+      Comentarios
+      <textarea name="comments" rows="4" [(ngModel)]="appointment.comments"></textarea>
+    </label>
+
+    <button type="submit">Solicitar cita</button>
+  </form>
+</section>
