@@ -1,1 +1,33 @@
-/* You can add global styles to this file, and also import other style files */
+@import url('https://fonts.googleapis.com/css2?family=Manjari:wght@100;400;700&family=Montserrat:wght@400;600;700&display=swap');
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+  /* ~8% más que 16px por defecto: sube un poco toda la tipografía en rem */
+  font-size: 108%;
+}
+
+body {
+  font-family: 'Manjari', system-ui, sans-serif;
+  color: #41342c;
+  background-color: #fff9f4;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}

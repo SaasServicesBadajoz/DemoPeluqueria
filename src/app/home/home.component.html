@@ -1,0 +1,167 @@
+<!-- ======================== NAVBAR ======================== -->
+<header
+  class="navbar"
+  [class.navbar--dark-links]="navDarkLinks()"
+  [class.navbar--elevated]="navElevated()"
+>
+  <nav class="navbar__inner">
+    <div class="navbar__nav">
+      <a href="#inicio" class="navbar__link">Inicio</a>
+      <a href="#servicios" class="navbar__link">Servicios</a>
+      <a href="#experiencia" class="navbar__link">Experiencia</a>
+      <a href="#nosotros" class="navbar__link">Sobre nosotros</a>
+    </div>
+    <a href="#inicio" class="navbar__logo">MUSSAS</a>
+    <div class="navbar__actions">
+      <a href="#reserva" class="navbar__cta">Pedir cita</a>
+    </div>
+  </nav>
+</header>
+
+<!-- ======================== HERO ======================== -->
+<section id="inicio" class="hero">
+  <div class="hero__content">
+    <h1 class="hero__title">
+      TU CABELLO, EN SU<br>
+      VERSIÓN MÁS NATURAL<br>
+      Y ELEGANTE
+    </h1>
+    <p class="hero__subtitle">
+      Cuidamos cada detalle con técnicas personalizadas,<br>
+      tratamientos naturales que realzan tu brillo real.
+    </p>
+    <a href="#nosotros" class="btn btn--light">Vivir la experiencia</a>
+  </div>
+</section>
+
+<!-- ======================== ABOUT ======================== -->
+<section id="nosotros" class="about">
+  <div class="about__container">
+    <div class="about__text">
+      <h2 class="about__title">Da un cambio a tu melena</h2>
+      <p class="about__body">Cada persona es única, y su cabello también lo es.</p>
+      <p class="about__body">
+        Nuestro enfoque se basa en el diagnóstico personalizado y en la elección de técnicas
+        que realzan la belleza natural sin comprometer la salud del cabello. Apostamos por
+        tratamientos capilares avanzados y por la técnica de barros naturales, una alternativa
+        suave y eficaz que aporta brillo, nutrición y equilibrio.
+      </p>
+      <p class="about__body">
+        Creamos experiencias de cuidado donde la técnica se une con la calma, la atención al
+        detalle y la búsqueda de resultados visibles y duraderos.
+      </p>
+    </div>
+    <div class="about__media">
+      <div class="about__arch">
+        <img src="/images/about.jpeg" alt="Cuidado capilar personalizado en Mussas" class="about__image" width="800" height="1200" />
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ======================== SERVICES ======================== -->
+<section id="servicios" class="services">
+  <div class="services__container">
+    <h2 class="services__title">Nuestros servicios</h2>
+    <div class="services__grid">
+
+      <div class="service-card">
+        <div class="service-card__icon">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+            <circle cx="6" cy="6" r="3"/>
+            <circle cx="6" cy="18" r="3"/>
+            <line x1="20" y1="4" x2="8.12" y2="15.88"/>
+            <line x1="14.47" y1="14.48" x2="20" y2="20"/>
+            <line x1="8.12" y1="8.12" x2="12" y2="12"/>
+          </svg>
+        </div>
+        <p class="service-card__name">Corte y estilismo personalizado</p>
+      </div>
+
+      <div class="service-card">
+        <div class="service-card__icon">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M8 3h8"/>
+            <path d="M9 3v3c-2 1.5-3 3.5-3 6v9a1 1 0 001 1h10a1 1 0 001-1v-9c0-2.5-1-4.5-3-6V3"/>
+            <line x1="7" y1="14" x2="17" y2="14"/>
+          </svg>
+        </div>
+        <p class="service-card__name">Coloración premium</p>
+      </div>
+
+      <div class="service-card">
+        <div class="service-card__icon">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M12 3l2.5 6.5L21 12l-6.5 2.5L12 21l-2.5-6.5L3 12l6.5-2.5z"/>
+            <path d="M19 2l.75 1.75L21.5 4.5l-1.75.75L19 7l-.75-1.75L16.5 4.5l1.75-.75z"/>
+          </svg>
+        </div>
+        <p class="service-card__name">Mechas y reflejos naturales</p>
+      </div>
+
+      <div class="service-card">
+        <div class="service-card__icon">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M8 6c0-1.7 1.3-3 3-3s3 1.3 3 3"/>
+            <path d="M5 10h14a8 8 0 01-14 0z"/>
+            <path d="M9 4.5c0-1 .5-1.5 1-2"/>
+            <path d="M14.5 4.5c0-1-.5-1.5-1-2"/>
+          </svg>
+        </div>
+        <p class="service-card__name">Tratamientos con barros naturales</p>
+      </div>
+
+      <div class="service-card">
+        <div class="service-card__icon">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M12 2C12 2 5 10 5 15a7 7 0 0014 0c0-5-7-13-7-13z"/>
+            <path d="M9 17a4 4 0 003 3"/>
+          </svg>
+        </div>
+        <p class="service-card__name">Hidratación y reparación capilar</p>
+      </div>
+
+      <div class="service-card">
+        <div class="service-card__icon">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M2 7c1.5-3 3-3 4.5 0S9 10 10.5 7 12 4 13.5 7 15 10 16.5 7 18 4 19.5 7 21 10 22 7"/>
+            <path d="M2 13c1.5-3 3-3 4.5 0S9 16 10.5 13 12 10 13.5 13 15 16 16.5 13 18 10 19.5 13 21 16 22 13"/>
+          </svg>
+        </div>
+        <p class="service-card__name">Control del encrespamiento</p>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ======================== FEATURE: BARROS ======================== -->
+<section id="experiencia" class="feature">
+  <div class="feature__inner">
+    <div class="feature__text-block">
+      <h2 class="feature__title">
+        BARROS NATURALES PARA UN<br />
+        CABELLO MÁS SANO Y EQUILIBRADO
+      </h2>
+      <p class="feature__subtitle">
+        Una técnica tradicional reinventada para el cuidado capilar moderno, que aporta color,
+        brillo y salud sin agredir la fibra del cabello.
+      </p>
+    </div>
+  </div>
+  <div class="feature__photo">
+    <img src="/images/barros.jpeg" alt="Tratamiento de barros naturales en Mussas" width="1200" height="675" />
+  </div>
+</section>
+
+<!-- ======================== CTA ======================== -->
+<section id="reserva" class="cta">
+  <div class="cta__container">
+    <h2 class="cta__title">RESERVA TU EXPERIENCIA EN MUSSAS ESTILISTAS</h2>
+    <p class="cta__text">
+      Cuéntanos qué necesita tu cabello y te asesoraremos para ofrecerte el tratamiento
+      más adecuado. Estamos aquí para ayudarte a conseguir un resultado natural,
+      saludable y elegante.
+    </p>
+  </div>
+</section>
