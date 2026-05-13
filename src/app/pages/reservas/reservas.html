@@ -1,0 +1,42 @@
+<div class="reservas-container">
+  <h2>Reserva tu cita</h2>
+  <p>Selecciona la fecha y hora que mejor te vengan para tu visita.</p>
+  
+  <div class="booking-layout">
+    <div class="calendar-section">
+      <h3>1. Fecha y Hora</h3>
+      <label for="fecha">Selecciona un día:</label>
+      <input type="date" id="fecha" name="fecha" class="date-picker">
+      
+      <label for="hora">Selecciona una hora:</label>
+      <select id="hora" name="hora" class="time-picker">
+        <option value="">Elige una hora...</option>
+        <option value="10:00">10:00</option>
+        <option value="11:00">11:00</option>
+        <option value="12:00">12:00</option>
+        <option value="16:00">16:00</option>
+        <option value="17:00">17:00</option>
+        <option value="18:00">18:00</option>
+      </select>
+    </div>
+    
+    <div class="details-section">
+      <h3>2. Detalles del Servicio</h3>
+      <label for="servicio">Servicio:</label>
+      <select id="servicio" name="servicio">
+        <option value="corte">Corte de pelo</option>
+        <option value="tinte">Tinte</option>
+        <option value="peinado">Peinado</option>
+        <option value="completo">Pack completo</option>
+      </select>
+      
+      <label for="nombre">Tu nombre:</label>
+      <input type="text" id="nombre" placeholder="Ej. María García">
+
+      <label for="telefono">Teléfono:</label>
+      <input type="tel" id="telefono" placeholder="Tu número de contacto">
+
+      <button class="btn-reservar">Confirmar Reserva</button>
+    </div>
+  </div>
+</div>
