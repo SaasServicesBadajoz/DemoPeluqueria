@@ -36,6 +36,7 @@ $quaternary: #fff9f4;
   left: 0;
   right: 0;
   z-index: 100;
+  margin-top: 20px;
   padding: 0 3rem;
   transition:
     color 0.25s ease,
@@ -69,7 +70,8 @@ $quaternary: #fff9f4;
   &__nav {
     display: flex;
     flex: 1;
-    gap: 2rem;
+    gap: 1.5rem;
+    flex-wrap: nowrap;
   }
 
   &__link {
@@ -79,6 +81,7 @@ $quaternary: #fff9f4;
     letter-spacing: 0.03em;
     transition: color 0.25s ease;
     text-decoration: none;
+    white-space: nowrap;
 
     &:hover {
       color: #ffffff;
