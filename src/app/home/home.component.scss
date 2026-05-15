@@ -555,7 +555,6 @@ $quaternary: #fff9f4;
 @media (max-width: 900px) {
   .navbar {
     padding: 0 1.5rem;
-    display: flex;
 
     &__nav {
       display: none;
@@ -563,6 +562,7 @@ $quaternary: #fff9f4;
 
     &__logo {
       flex: none;
+      padding-top: 0.5rem;
     }
 
     &__actions {
